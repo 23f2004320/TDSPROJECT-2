@@ -32,7 +32,7 @@ app = Flask(__name__)
 
 # Initialize OpenAI client
 client = OpenAI(
-    api_key=os.getenv(""),
+    api_key=os.getenv("AIPROXY_TOKEN"),
     base_url=os.getenv("base_url"),
 )
 
