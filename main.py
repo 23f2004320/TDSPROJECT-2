@@ -33,7 +33,7 @@ app = Flask(__name__)
 # Initialize OpenAI client
 client = OpenAI(
     api_key=os.getenv("AIPROXY_TOKEN"),
-    base_url=os.getenv("base_url"),
+    base_url=os.getenv("http://aiproxy.sanand.workers.dev/openai/v1"),
 )
 
 def save_upload_file_temp(file_storage) -> Optional[str]:
